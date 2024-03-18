@@ -2,7 +2,7 @@
 using namespace std ; 
 int FrogJump(int index , int *heights  , int *dp) { 
 	if ( index == 0 ) { 
-		
+		// if indx is 0 then i can't take any further steps beyond that so i return 0 
 		return 0 ; 
 	}
 	// if there is already a value in the dp array then 
