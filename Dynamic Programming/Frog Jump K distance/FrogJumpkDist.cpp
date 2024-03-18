@@ -2,7 +2,7 @@
 using namespace std ; 
 int JumpKdist(int index , int heights [ ]  , int dp [ ]  , int k ) { 
    if ( index == 0 ) return index  ; 
-   int minsteps = 10000000 ; 
+   int minsteps = 10000000 ;  // taking minsteps as intmax
    if ( dp [ index ] != -1 ) return dp[ index ] ; 
    for ( int j = 1 ; j <= k ; j ++ ) { 
       if ( index - j >=0) { 
